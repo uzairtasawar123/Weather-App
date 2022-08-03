@@ -1,0 +1,92 @@
+.main_div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    margin-left: 500px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 0px grey ;    
+
+}
+
+.inner_div{
+    background-color: rgb(142, 204, 147);
+    border-radius: 20px;
+
+}
+
+.heading{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 100px;
+    margin-top: 50px;
+    
+}
+.heading_div{
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height: 100vh;
+}
+
+
+.word{
+    animation-name: change;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.word_1{
+   --color-1 : blue;
+   --color-2: pink;
+   --color-3: red;
+}
+.word_2{
+    --color-1 : green;
+   --color-2: brown;
+   --color-3: yellow;
+}
+.word_3{
+    --color-1 : orange;
+   --color-2: purple;
+   --color-3: tomato;
+}
+.word_4{
+    --color-1 : rgb(0, 255, 255);
+   --color-2: rgb(194, 0, 32);
+   --color-3: rgb(83, 128, 0);
+}
+
+@keyframes change{
+    0%{color: var(--color-1);}
+    20%{color: var(--color-2);}
+    40%{color:var(--color-3)}
+    60%{color: var(--color-2);}
+    80%{color: var(--color-1);}
+    100%{color: var(--color-3);}
+}
+
+.display_city_name{
+    text-transform:capitalize;
+}
+
+.temperature{
+    animation-name: temp;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes temp{
+    0%{color:pink}
+    20%{color:red}
+    40%{color:rgb(255, 192, 236)}
+    60%{color:rgb(25, 0, 255)}
+    80%{color:rgb(192, 251, 255)}
+    100%{color:rgb(255, 166, 0)}
+}
